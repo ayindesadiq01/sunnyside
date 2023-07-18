@@ -58,6 +58,7 @@ ul li a {
 .menu-icon {
  display: none;
 }
+/* TOP */
 @media (max-width: 375px) {
  .top{
   background: url('./mobile/image-header.jpg');
@@ -73,5 +74,36 @@ ul li a {
  }
  .arrow-down {
   top: 50px;
+ }
+ .menu-icon {
+  display: grid;
+  height: 20px;
+ }
+}
+/* BRAND INFO */
+@media (max-width: 375px) {
+ .designs {
+  display: flex;
+ }
+ .top-design {
+  display: grid;
+  grid-auto-rows: minmax(100%, auto);
+ }
+ .brand-images {
+  background: url('./mobile/image-transform.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+ }
+ .brand-info {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+ }
+
+ .brand-heading {
+  font-size: 2rem;
  }
 }
