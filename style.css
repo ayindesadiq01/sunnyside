@@ -51,8 +51,27 @@ ul li a {
  font-weight: 400;
  font-size: 4rem;
 }
-.head-arrow {
+.arrow-down {
  position: relative;
- font-size: 15rem;
-color: white;
+ top: 120px;
+}
+.menu-icon {
+ display: none;
+}
+@media (max-width: 375px) {
+ .top{
+  background: url('./mobile/image-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ }
+ .list-items {
+  display: none;
+ }
+ .header-text {
+  font-size: 3rem;
+ }
+ .arrow-down {
+  top: 50px;
+ }
 }
