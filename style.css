@@ -82,28 +82,69 @@ ul li a {
 }
 /* BRAND INFO */
 @media (max-width: 375px) {
+ .brand-images-1 {
+  background: url('./mobile/image-transform.jpg');
+ }
+ .brand-images-2 {
+  background: url('./mobile/image-stand-out.jpg');
+ }
+ .graphics {
+  background: url('./mobile/image-graphic-design.jpg');
+ }
+ .photography {
+  background-image: url('./mobile/image-photography.jpg');
+ }
  .designs {
   display: flex;
+  flex-direction: column;
  }
  .top-design {
   display: grid;
-  grid-auto-rows: minmax(100%, auto);
+  /* grid-auto-rows: minmax(100%, auto); */
  }
  .brand-images {
-  background: url('./mobile/image-transform.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 250px;
  }
+
  .brand-info {
   text-align: center;
   margin: 0 auto;
   width: 80%;
+  padding: 3em 0;
  }
 
  .brand-heading {
   font-size: 2rem;
+ }
+ .brand-text {
+  margin: 1em 0;
+ }
+ .learn-more {
+  text-decoration: none;
+  font-weight: 600;
+ }
+ .graphics, .photography {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+ }
+ .design-wordings {
+  position: relative;
+  top: 50%;
+  padding: 2em;
+  text-align: center;
+ }
+ .design-heading {
+  margin: 1.3em 0;
+ }
+ .design-text {
+  font-weight: 500;
  }
 }
