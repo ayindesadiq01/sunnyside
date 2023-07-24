@@ -3,9 +3,11 @@
  margin: 0;
  box-sizing: border-box;
 }
+
 body {
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .top {
   width: 100%;
   height: 100vh;
@@ -13,30 +15,36 @@ body {
   background-position: center;background-size: cover;
   background-repeat: no-repeat;
 }
+
 .header {
  margin: 0 auto;
 }
+
 .nav {
  display: flex;
  justify-content: space-between;
  padding: 2em;
 }
+
 ul {
  display: flex;
  list-style: none;
 }
+
 ul li a {
  text-decoration: none;
  margin-left: 2em;
  color: white;
  font-weight: 500;
 }
+
 .contact {
  color: blue;
  padding: .5em .7em;
  background-color: white;
  border-radius: 100px;
 }
+
 .header-title {
  display: flex;
  flex-direction: column;
@@ -44,20 +52,25 @@ ul li a {
  align-items: center;
  text-align: center;
 }
+
 .header-text {
  color: white;
  font-weight: 400;
  font-size: 4rem;
 }
+
 .arrow-down {
  position: relative;
  top: 120px;
 }
+
 .menu-icon {
  display: none;
 }
+
+
 /* TOP */
-@media (max-width: 375px) {
+
  .top{
   background: url('./mobile/image-header.jpg');
   background-repeat: no-repeat;
@@ -77,9 +90,9 @@ ul li a {
   display: grid;
   height: 20px;
  }
-}
-/* BRAND INFO */
-@media (max-width: 375px) {
+
+  /* BRAND INFO */
+
  .brand-images-1 {
   background: url('./mobile/image-transform.jpg');
  }
@@ -145,9 +158,9 @@ ul li a {
  .design-text {
   font-weight: 500;
  }
-}
-/* TESTIMONIAL */
-@media (max-width: 375px) {
+
+  /* TESTIMONIAL */
+
  .testimonial-list {
    width: 80%;
    margin: 0 auto;
@@ -183,9 +196,9 @@ ul li a {
    font-weight: 500;
    margin-top: .4em;
   }
-}
+
 /* BRAND GALLERY */
-@media (max-width: 375px) {
+
  .brand-gallery {
   width: 100%;
   display: grid;
@@ -194,7 +207,7 @@ ul li a {
  .brand-gallery > img {
   width: 100%;
  }
-}
+
 /* FOOTER */
 .footer {
  text-align: center;
