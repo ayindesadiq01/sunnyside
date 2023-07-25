@@ -407,8 +407,17 @@ ul li a {
   .list-items {
     width: 50%
   }
+
   ul li a {
     margin-left: 4em;
+  }
+
+  .header-title {
+    margin-top: 5em;
+  }
+
+  .header-text {
+    font-size: 4rem;
   }
 
   .top-design, .center-design, .brand-images {
