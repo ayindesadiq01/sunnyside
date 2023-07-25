@@ -11,37 +11,51 @@ body {
 .top {
   width: 100%;
   height: 100vh;
-  background: url('./desktop/image-header.jpg');
+  background: url('./mobile/image-header.jpg');
   background-position: center;background-size: cover;
   background-repeat: no-repeat;
-}
-
-.header {
- margin: 0 auto;
 }
 
 .nav {
  display: flex;
  justify-content: space-between;
  padding: 2em;
+ position: relative;
 }
 
 ul {
- display: flex;
  list-style: none;
+}
+
+ul li {
+  margin-bottom: 1.5em;
+  text-align: center;
 }
 
 ul li a {
  text-decoration: none;
- margin-left: 2em;
- color: white;
  font-weight: 500;
 }
 
+.list-items {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background-color: white;
+  width: 60%;
+  border-radius: 7px;
+  z-index: 100;
+  padding: 2em;
+}
+.hidden {
+  display: none;
+}
 .contact {
- color: blue;
+ color: white;
  padding: .5em .7em;
- background-color: white;
+ background-color: red;
  border-radius: 100px;
 }
 
@@ -64,11 +78,6 @@ ul li a {
  top: 120px;
 }
 
-.menu-icon {
- display: none;
-}
-
-
 /* TOP */
 
  .top{
@@ -77,9 +86,7 @@ ul li a {
   background-size: cover;
   background-position: center;
  }
- .list-items {
-  display: none;
- }
+
  .header-text {
   font-size: 3rem;
  }
@@ -89,6 +96,7 @@ ul li a {
  .menu-icon {
   display: grid;
   height: 20px;
+  z-index: 100;
  }
 
   /* BRAND INFO */
@@ -96,22 +104,25 @@ ul li a {
  .brand-images-1 {
   background: url('./mobile/image-transform.jpg');
  }
+
  .brand-images-2 {
   background: url('./mobile/image-stand-out.jpg');
  }
+
  .graphics {
   background: url('./mobile/image-graphic-design.jpg');
  }
+
  .photography {
   background-image: url('./mobile/image-photography.jpg');
  }
+
  .designs {
   display: flex;
   flex-direction: column;
  }
  .top-design {
   display: grid;
-  /* grid-auto-rows: minmax(100%, auto); */
  }
  .brand-images {
   background-repeat: no-repeat;
@@ -235,3 +246,218 @@ ul li a {
  margin-right: 1em;
 }
 
+@media (min-width: 600px) {
+  .top {
+    background: url('./desktop/image-header.jpg');
+    background-position: center;background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  ul li a {
+    margin-left: 1.5em;
+  }
+  .list-items {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+    background: none;
+  }
+
+  .brand-info {
+    width: 60%;
+  }
+
+  .design-wordings {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .brand-images {
+    height: 500px;
+  }
+
+  .brand-images-1 {
+    background: url('./desktop/image-transform.jpg');
+  }
+
+  .brand-images-2 {
+    background: url('./desktop/image-stand-out.jpg');
+  }
+  .brand-images {
+    background-position: center;background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .graphics {
+    background: url('./desktop/image-graphic-design.jpg');
+  }
+
+ .photography {
+  background-image: url('./desktop/image-photography.jpg');
+
+ }
+ .graphics, .photography {
+   background-position: center;background-size: cover;
+  background-repeat: no-repeat;
+ }
+}
+
+@media (min-width: 700px) {
+  ul li a {
+    margin-left: 2em;
+  }
+}
+
+@media (min-width: 800px) {
+  ul li a {
+    margin-left: 3em;
+  }
+  .top-design, .center-design{
+    display: flex;
+    height: 70vh;
+  }
+
+  .brand-images {
+    width: 50%;
+    height: 70vh;
+  }
+
+  .brand-info{
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em;
+  }
+
+  .brand-heading {
+    font-size: 1.5rem;
+  }
+
+  .center-design .brand-info {
+    order: 2;
+  }
+
+  .bottom-design {
+    display: flex;
+  }
+
+  .brand-text {
+    line-height: 1.5em;
+  }
+
+  .learn-more {
+    margin-top: 1.5em;
+  }
+
+  .testimonial {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  .brand-gallery {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+    
+  .brand-gallery>img {
+    width: 100%;
+  }
+}
+@media (min-width: 900px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .businsee-logo {
+    width: 20%;
+  }
+  .list-items {
+    width: 55%;
+  }
+  ul li {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  ul li a {
+    margin-left: 3em;
+  }
+
+  .brand-gallery {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .brand-gallery > img {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .list-items {
+    width: 50%
+  }
+  ul li a {
+    margin-left: 4em;
+  }
+
+  .top-design, .center-design, .brand-images {
+    height: 70vh;
+  }
+
+  .brand-info {
+    padding: 8em;
+  }
+  .brand-heading {
+    font-size: 2.1rem;
+  }
+  .brand-text {
+    line-height: 1.8em;
+  }
+  .graphics, .photography {
+    height: 70vh;
+  }
+  .testimonial-list {
+      flex-direction: row;
+      width: 90%;
+    }
+    .testimonial {
+      width: 28%;
+    }
+  
+    .testimonial-text {
+      font-size: .9rem;
+      margin-bottom: 3em;
+      font-weight: 400;
+    }
+  
+    .testimonial-name {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  .brand-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.blurry {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background-color: rgba(221, 221, 221, 0.6);
+  backdrop-filter: blur(3px);
+}
